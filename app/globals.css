@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.top-copy-right {
+  position: relative;
+  top: calc(100vh - 64px);
+  height: 48px;
+}
