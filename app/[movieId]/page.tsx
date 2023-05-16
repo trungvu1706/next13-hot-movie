@@ -18,7 +18,7 @@ type MovieDetailProps = {
 
 async function getMovieDetail(movieId: string) {
   const res = await fetch(
-    `${process.env.BASE_URL_DETAIL}/${movieId}?api_key=${process.env.API_KEY}`
+    `${process.env.NEXT_PUBLIC_BASE_URL_DETAIL}/${movieId}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
   )
   const data: MovieDetail = await res.json()
   return data
@@ -115,7 +115,7 @@ export default async function MovieDetail({
         </div>
 
         <div className="flex items-center mt-4">
-          <div className="flex items-center border border-gray-400 rounded-md p-2 cursor-pointer mr-4">
+          <div className="flex items-center rounded-md p-2 cursor-pointer mr-4 bg-indigo-700">
             <FontAwesomeIcon icon={faPlay} style={{ fontSize: 20 }} />
             <span className="font-normal text-gray-300 text-base capitalize ml-2 hover:text-gray-50">
               watch movie

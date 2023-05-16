@@ -16,10 +16,10 @@ export interface Movie {
 }
 
 export interface ResponseData {
-  page: number
-  total_pages: number
-  total_results: number
-  results: Movie[]
+  page?: number
+  total_pages?: number
+  total_results?: number
+  results?: Movie[]
 }
 
 export interface MovieDetail {

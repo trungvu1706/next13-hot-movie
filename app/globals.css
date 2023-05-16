@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-color-input-rbg: rgb(75 85 99);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,8 +27,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+input,
+select,
+textarea {
+  color: var(--text-color-input-rbg);
+}
+
 .top-copy-right {
   position: relative;
   top: calc(100vh - 64px);
   height: 48px;
+}
+
+.custom-input {
+  min-width: 20rem;
+  outline: none;
+  padding: 4px 12px;
+  border-radius: 6px;
+  height: 2.5rem;
+}
+
+.box-shadow-1 {
+  box-shadow: rgba(100, 100, 111, 0.2) -2px 4px 29px 0px;
 }
